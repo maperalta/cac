@@ -1,0 +1,23 @@
+{
+  "$id": "my_test_apply",
+  "$schema": "https://schema.yext.com/config/analytics/insight/v1",
+  "name": "Searches by Day",
+  "description": "Searches by Day",
+  "query": {
+    "metrics": [
+      "yext/ANSWERS_SEARCHES"
+    ],
+    "dimensions": [
+      "yext/DAYS"
+    ],
+    "filters": [
+      {
+        "filter": "yext/date",
+        "in": "DAYS_14"
+      }
+    ]
+  },
+  "display": {
+    "line": {}
+  }
+}
